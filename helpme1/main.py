@@ -32,7 +32,7 @@ This will install the packages from the requirements.txt for this project.
 app = Flask(__name__, template_folder="templates")
 login_manager = LoginManager()
 login_manager.init_app(app)
-app.config['SECRET_KEY'] = '8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
+app.config['SECRET_KEY'] = SECRETKEY
 Bootstrap5(app)
 app.config['CKEDITOR_HEIGHT'] = 1000
 app.config['CKEDITOR_WIDTH'] = 1000
